@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8" />
-  <title>Flatburger</title>
-  <link rel="icon" href="./assets/hamburger-icon.png">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script defer type="text/javascript" src="./src/index.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flatburger</title>
+    <link rel="icon" href="./assets/hamburger-icon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer type="text/javascript" src="./src/index.js"></script>
+  </head>
 
 <body>
   <header>
@@ -16,31 +15,26 @@
 
   <!-- Restaurant Menu -->
   <div id="restaurant-menu">
-    <!-- Food Images Here -->
+    <!-- Burger Images Here -->
+    <img src="./assets/image-placeholder.jpg"/>
   </div>
 
   <!-- Food Details -->
   <div id="food-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
+    <img id="image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+    <h2 id="name">Insert Name Here</h2>
   </div>
 
   <h3>Description:</h3>
-  <p id='description-display'>
+  <p id='burger-info'>
     Insert food description here
   </p>
 
   <!-- New Food Form -->
-  <form id="new-food">
-    <h4>Add New Food</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="new-name" required/>
-    <label for="image">Image: </label>
-    <input type="text" name="image" id="new-image" required/>
-    <label for="description">Description: </label>
-    <textarea name="description" id="new-description" required></textarea>
-    <input type="submit" value="Create" />
-  </form>
+  <div id="new-food">
+    <h4><span id="burger-num">[X]</span> remaining burgers</h4>
+    <button id="buy-burger" class="ui orange button">Buy Burger</button>
+  </div>
 
 </body>
 
