@@ -30,16 +30,18 @@ fetch('http://localhost:3000/burgers')
         addBurgerNameToMenu(burger)
     })
 
-    // Deliverable # 3
+    // Deliverable # 3 - Solution 1
     // displayBurgerDetails(burgers[0])
 })
 
+// Deliverable # 3 - Solution 2
 fetch('http://localhost:3000/burgers/1')
 .then(response => response.json())
 .then(burger => {
     displayBurgerDetails(burger)
 })
 
+// Deliverable # 4
 const addToCartForm = document.getElementById('add-to-cart-form')
 addToCartForm.addEventListener('submit', (event) => {
     event.preventDefault()
