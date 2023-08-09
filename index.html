@@ -13,27 +13,21 @@
     <h3>🍔 Flatburger 🍔</h3>
   </header>
 
-  <!-- Restaurant Menu -->
   <div id="restaurant-menu">
-    <!-- Burger Images Here -->
-    <img src="./assets/image-placeholder.jpg"/>
+    <!-- Show burger names here -->
   </div>
 
-  <!-- Food Details -->
   <div id="food-detail">
     <img id="image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 id="name">Insert Name Here</h2>
+    <h2 id="name">Name Of Burger</h2>
+    <h2>Number In Cart: <span id="number-in-cart-count">[X]</span></h2>
   </div>
 
-  <h3>Description:</h3>
-  <p id='burger-info'>
-    Insert food description here
-  </p>
+  <br/>
 
-  <!-- New Food Form -->
-  <div id="new-food">
-    <h4><span id="burger-num">[X]</span> remaining burgers</h4>
-    <button id="buy-burger" class="ui orange button">Buy Burger</button>
+  <form id="add-to-cart-form">
+    <input type="text" placeholder="Number to add..." id="number-to-add" name="number-to-add" />
+    <input type="submit" value="Add to Cart" />
   </div>
 
 </body>
