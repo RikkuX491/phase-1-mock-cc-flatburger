@@ -33,6 +33,8 @@ header {
   height: 150px;
   margin-right: 0.5rem;
   cursor: pointer;
+  border-style: solid;
+  border-color: red;
 }
   
 #restaurant-menu span:last-child {
