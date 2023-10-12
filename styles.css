@@ -22,19 +22,24 @@ header {
 }
   
 #restaurant-menu {
+  height: 15vh;
+  background: rgb(179, 49, 49);
   display: flex;
-  overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3vh;
 }
   
 #restaurant-menu span {
-  flex: 0 1 auto;
-  height: 150px;
-  margin-right: 0.5rem;
-  cursor: pointer;
-  border-style: solid;
-  border-color: red;
+  padding: 1%;
+  height: 80%;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  align-items: center;
+  border-radius: 2em;
+  border: 1px solid white;
 }
   
 #restaurant-menu span:last-child {
