@@ -4,6 +4,12 @@ Flatiron's Burger Restaurant is open for business! You will be using a local API
 
 > To view in VSCode, right click on the README.md file and select "Open Preview".
 
+## Demo
+
+Use this image as an example of how the app should look once it is complete.
+
+![Finished Product](./assets/demo.png "Finished Product")
+
 ## Setup
 
 Run this command to get the backend started:
@@ -51,19 +57,4 @@ As a user, I can:
 
 2. When the burger in the `div#restaurant-menu` is clicked, display the burger's details in the `div#food-detail`.
 
-3. See the first burger's details in the `div#food-detail`, including its **name, image,
-   and number_in_cart** when the page loads. You can either use the burger information from your first request, or make a new request to this endpoint to get the burger's details:
-
-   ```txt
-   GET /burgers/1
-
-   Example Response:
-   {
-     "id": 1,
-     "name": "Flatburger",
-     "image": "./assets/food/flatburger.jpeg",
-     "number_in_cart": 0
-   }
-   ```
-
-4. When the `form#add-to-cart-form` is submitted, add the value from the input field to the burger displayed in the `div#food-detail`. **No persistence is needed**. The number in cart should be _cumulative_. For example, if a burger currently has 7 for the number in cart, and a user add another 7 to the number in cart via the form, the number in cart displayed for the burger should increase to 14.
+3. When the `form#add-to-cart-form` is submitted, add the value from the input field to the burger displayed in the `div#food-detail`. **No persistence is needed**. The number in cart should be _cumulative_. For example, if a burger currently has 7 for the number in cart, and a user add another 7 to the number in cart via the form, the number in cart displayed for the burger should increase to 14.
